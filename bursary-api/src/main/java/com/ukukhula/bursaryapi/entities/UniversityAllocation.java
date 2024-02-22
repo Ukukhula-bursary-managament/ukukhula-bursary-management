@@ -10,12 +10,11 @@ public class UniversityAllocation {
     private BigDecimal amount;
     private int bursaryDetailsId;
 
-    public UniversityAllocation(int id, int universityId, BigDecimal amount, int bursaryDetailsId) {
+    public UniversityAllocation(int id, int universityId, BigDecimal amount, int bursaryDetailsId) { //not necessary
         this.id = id;
         this.universityId = universityId;
         this.bursaryDetailsId = bursaryDetailsId;
         this.amount = amount;
-
     }
 
 }
