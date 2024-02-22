@@ -67,9 +67,9 @@ public class UniversityAllocationController {
 
         try {
             Integer result = universityAllocationService.addNewAllocation(universityId, amount, bursaryDetailsId);
-            return "Allocation added successfully. Rows affected: " + result;
-        } catch (IllegalStateException e) {
-            throw e;
+            return "Allocation added successfully. Rows affected: " + result; // ResponseEntity.ok
+        } catch (IllegalStateException e) { 
+            throw e;  
         }
     }
 

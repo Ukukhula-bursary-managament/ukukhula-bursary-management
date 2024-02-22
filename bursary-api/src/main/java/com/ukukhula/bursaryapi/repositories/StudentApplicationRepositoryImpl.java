@@ -53,10 +53,6 @@ public class StudentApplicationRepositoryImpl implements StudentApplicationRepos
     @Override
     public Integer updateStudentsApplicationColumnValue(int studentID, String columnName, String value) {
 
-        // for later if we get time: data type validation
-        // Class<?> columnType = ColumnValueConverter.getColumnDataType(columnName);
-        // Object convertedValue = ColumnValueConverter.convertValueToType(value,
-        // columnType);
 
         final String SQL = "UPDATE StudentApplication SET " + columnName + " = ? WHERE StudentID = ?";
 
