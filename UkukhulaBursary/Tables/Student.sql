@@ -6,7 +6,8 @@ CREATE TABLE [dbo].[Student]
   [GenderID] INT NOT NULL,
   [EthnicityID] INT NOT NULL,
   [UniversityID] INT NOT NULL,
-  [DepartmentID] INT NOT NULL
+  [DepartmentID] INT NOT NULL,
+  [CourseOfStudy] VARCHAR(100) NOT NULL
 )
 GO
 

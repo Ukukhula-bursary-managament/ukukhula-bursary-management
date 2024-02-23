@@ -124,10 +124,8 @@ public class UniversityAllocationRepositoryImpl implements UniversityAllocationR
                 throw new IllegalStateException("University not approved for funding");
             }
             return jdbcTemplate.update(INSERT_NEW_ALLOCATION, universityId, amount, bursaryDetails);
-        } catch (IllegalStateException e) {
-            throw e;
-        } catch (Exception e) {
-            throw new RuntimeException("Error adding new allocation for university");
+        }  catch (Exception e) {
+            throw new RuntimeException("Error adding new allocation for university"); //more info
         }
     }
 
